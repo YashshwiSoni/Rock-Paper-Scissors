@@ -214,7 +214,7 @@ border-radius: 5px;
     text-align: center;
     color: white;
     background-color: #3f78b0;
-    border: 1px solid rgb(34, 0, 255);
+    /* border: 1px solid rgb(30, 255, 0); */
     height: 70px;
     line-height: 70px;
     display: flex;
