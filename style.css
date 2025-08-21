@@ -404,7 +404,7 @@ input:checked + .spcrcheckbtn{
 .game-zone{
     /* border: 1px solid red; */
     /* background-color: rgb(56, 74, 68); */
-    background-image: url('/images/1-n-game_background_Anime.webp');
+    background-image: url('images/1-n-game_background_Anime.webp');
     height: 600px;
     display: flex;
     align-items: center;

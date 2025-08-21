@@ -261,7 +261,7 @@ function compChoice(pSelect){
         console.log("working");
         
       }else{
-      pwinrimg.style.backgroundImage = "url('/images/1-1Computer_Anime.webp')";
+      pwinrimg.style.backgroundImage = "url('images/1-1Computer_Anime.webp')";
       winerName.textContent = "Better luck next time"
       }
       
@@ -363,7 +363,7 @@ function enableplayerclick(){
 
 btn.addEventListener("change",function(){
  if(btn.checked){
- gzone.style.backgroundImage = "url(/images/1-d-game_background_Anime.webp)";
+ gzone.style.backgroundImage = "url(images/1-d-game_background_Anime.webp)";
  notification.textContent = ("Light mode enble");
   
  chngtxt.forEach(function(chan){
