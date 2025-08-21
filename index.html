@@ -1,0 +1,223 @@
+<!-- boiler plate code -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R-P-S game by Yashshwi Soni</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <meta name="viewport" content="width = device-width, initial-scale=1.0">
+</head>
+
+<!-- -----------------------------------------------------play now popup-------------------------------------------------------------------- -->
+
+<body>
+    <head>
+        <div id="playbackground">
+            <div id="playbox">
+              <div id="playNowcover">   
+                <h2 id="playhead">Welcome player</h2>
+                <div id="playerName">
+                    <label>Name:
+                        <input type="text" class="plrNm" id="plrNmInput" placeholder="Enter code name">
+                    </label>
+                </div>  
+                <div id="playerImgBox"> 
+                    <div class="plrImgInput" data-pic="/images/1-3player_Anime.webp"  style="background-image: url(/images/1-3player_Anime.webp);"></div>
+                    <div class="plrImgInput" data-pic="/images/1-2player_Anime.webp" style="background-image: url(/images/1-2player_Anime.webp);"></div>
+                    <div class="plrImgInput" data-pic="/images/1-5player_Anime.webp" style="background-image: url(/images/1-5player_Anime.webp);"></div>
+                    <div class="plrImgInput" data-pic="/images/1-4player_Anime.webp" style="background-image: url(/images/1-4player_Anime.webp);"></div>
+                </div>
+                <div class="playcondition">
+                    <ul> <u>Notes:</u>
+                        <li class="li">Create name using 5 characters only</li>
+                        <li class="li">select your avtar from the above 4.</li>
+                        <li class="li">Total rounds:15 </li>
+                        <li class="li">Draw mach will not be count.</li>
+                        <li class="li">Complete 15 rounds to see who wins the match.</li> 
+                    </ul>
+                </div>
+                <button id="playbutton">Play Now!</button>
+              </div>
+
+                <!-- play again -->
+                <div id="playagaincover">
+                    <div id="playwinrimg" style="background-image: url('');"></div>
+                    <h2 id="plyrwinsname" >you win</h2>
+                    <div id="plyrscor">
+                       <h3 id="cTotalscor" >comp scor : 0</h3>
+                       <h3 id="pTotalscor" >youe scor : 0</h3>
+                    </div>
+                    <div id="playagn" >
+                       <button id="playAgnbutton">Play Again!</button>
+                       <button id="homebutton">Home</button>
+                    </div>
+                </div>
+ 
+            </div>
+        </div>
+ 
+
+<!-- -------------------------------------------------head------------------------------------------------------------------------ -->
+ <div id="game-area">
+        <div class="header">
+              <div id="notify"class="hid"></div>
+            <div class="modes">
+            <label class="switch">
+               <input type="checkbox" id="chbox">
+                    <span class="slider"> 
+                      <i class="fa-solid fa-sun" style="margin-right: 2px;"></i>
+                      <i class="fa-solid fa-moon"></i>
+                    </span>
+            </label>
+            </div>
+            
+            <div class="mt"></div>
+
+            <h1 class="mnheading">Welcome to the Game Boss!</h1>
+            
+            <div class="spcrreset">
+                <label class="spcrbox">
+                  <input type="checkbox" id="spcrbtn">
+                    <span class="spcrcheckbtn" id="sound-icon"> 
+                        <i class="fa-solid fa-volume-high"></i>
+                        <!-- <i class="fa-solid fa-volume-xmark" style="display: none;"></i> -->
+                        
+                    </span>
+            </label>
+                <button class="restartbox" id="restartbox">
+                    <i class="fa-solid fa-reply"></i>
+                </button>
+            </div>            
+        </div>        
+    </head>
+
+<!-- ------------------------------------------------------background +com palyer------------------------------------------------------------------- -->
+
+    <main>
+        <div class="game-zone" id="game-zone">            
+            <div class="c-player-zone">
+                <div class="c-player-score">
+                    <div class="c-player-score-tlt">
+                        <h2 class = "ctxt" id="comp-score"><u>Score</u> : 0 </h2>
+                    </div>
+                    <div class="c-player-score-cnt">
+                    <div class = "c-scr"></div>
+                    <div class = "c-scr"></div>
+                    <div class = "c-scr"></div>
+                    <div class = "c-scr"></div>
+                    <div class = "c-scr"></div>
+                    <div class = "c-scr"></div>
+                    <div class = "c-scr"></div>
+
+                    <div class = "break"></div>
+
+                    <div class = "c-scr"></div>
+                    <div class = "c-scr"></div>
+                    <div class = "c-scr"></div>
+                    <div class = "c-scr"></div>
+                    <div class = "c-scr"></div>
+                    <div class = "c-scr"></div>
+                    <div class = "c-scr"></div>
+                    <div class = "c-scr"></div>
+                </div>
+                </div>
+                <div class="c-player">
+                    <div class="c-player-img-box">
+                        <div class="c-player-img" style="background-image: url(/images/1-1Computer_Anime.webp);">
+                            <h1>JARVIS...</h1>
+                        </div>                    
+                    </div>
+                    <div class="c-player-choices">
+                        <div class="c-choice" id="rock" data-choos="rock" style="background-image: url(/images/C-rock.webp);"></div>
+                        <div class="c-choice" id="paper" data-choos="paper" style="background-image: url(/images/C-paper.webp);"></div>
+                        <div class="c-choice" id="scissor" data-choos="scissor" style="background-image: url(/images/C-scissor.webp);"></div>
+                    </div>
+                </div>                
+            </div>
+
+
+<!-- ----------------------------------------------------------score--------------------------------------------------------------- -->
+
+            <div class="vs">
+                
+                <div class="round">
+                    <p id="round" class="ctxt">  Round:1 </p>
+                </div> 
+                <div class="vs-score nl"></div>  
+                <div class="msg-box">
+                    <p id="msg" class="ctxt">Click and Play<br>Rock -Paper - Scissor </p>
+                </div>      
+                 <div class="vs-score nl"></div>    
+            </div>
+
+
+<!-- -----------------------------------------------------------player-------------------------------------------------------------- -->
+
+            
+            <div class="player-zone">
+                <div class="player-score">
+                    
+                    <div class="player-score-cnt">
+                    <div class = "p-scr"></div>
+                    <div class = "p-scr"></div>
+                    <div class = "p-scr"></div>
+                    <div class = "p-scr"></div>
+                    <div class = "p-scr"></div>
+                    <div class = "p-scr"></div>
+                    <div class = "p-scr"></div>
+
+                    <div class = "break"></div>
+                    
+                    <div class = "p-scr"></div>
+                    <div class = "p-scr"></div>
+                    <div class = "p-scr"></div>
+                    <div class = "p-scr"></div>
+                    <div class = "p-scr"></div>
+                    <div class = "p-scr"></div>
+                    <div class = "p-scr"></div>
+                    <div class = "p-scr"></div>
+                    </div>
+                    <div class="player-score-tlt">
+                        <h2 class = "ctxt" id="user-score"> 0 : <u>Score</u> </h2>
+                    </div>
+                </div>
+                <div class="player">                    
+                    <div class="player-choices">
+                        <div class="choice" id="p-rock" data-choos="rock" style="background-image: url(/images/P-rock.webp);"></div>
+                        <div class="choice" id="p-paper" data-choos="paper" style="background-image: url(/images/P-paper.webp);"></div>
+                        <div class="choice" id="p-scissor" data-choos="scissor" style="background-image: url(/images/P-scissor.webp);"></div>
+                    </div>
+                    <div class="player-img-box">
+                        <div class="player-img" id="player-img" style="background-image: url('');">
+                            <h1 id="player-Name">...YASHU</h1>
+                        </div>                    
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </main>
+
+
+ <!-- ---------------------------------------------------------foot---------------------------------------------------------------- -->
+    <footer>
+        <div class="foot">
+            <p class="name-info"><b>"I’m Yashshwi Soni, and I built rock, paper, scissor game from scratch using HTML, CSS & JS for frontend practice."</b></p>            
+        </div>
+    </footer>
+
+    <!-- ---------------------------------------------------------bg audio---------------------------------------------------------------- -->
+     <audio id="bg-audio" loop>
+        <source src="/audio/1-1bzck.mp3" type="audio/mpeg" />
+     </audio>
+    <audio id="click-sound" src="/audio/1-2tap.mp3"></audio>
+ </div> 
+ <audio id="result-soundTo" src="/audio/1-3Not.mp3"></audio>
+ </div>   
+
+
+
+    <script src="Js-app.js"></script>
+</body>
+</html>
