@@ -170,7 +170,7 @@ pClick.addEventListener("click", function(){
   disableplayerclick();
 
   clickSound.currentTime = 0;  
-  // clickSound.play(); 
+  clickSound.play(); 
 
 const pSelect = pClick.getAttribute("data-choos");
 const pGlow = document.getElementById(`p-${pSelect}`);
