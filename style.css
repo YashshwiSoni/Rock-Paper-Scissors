@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    border: border-box;
+    box-sizing: border-box;
     /* overflow: hidden; */
 }
 
@@ -730,7 +730,7 @@ height: 2.4vw;
 
 
 /* @media (max-width:600px) { */
-@media screen and (max-width: 768px) and (orientation: landscape){
+@media screen and (max-width: 660px) and (orientation: landscape){
 
 /* ------------play now-------------------- */
 
@@ -916,7 +916,7 @@ display: none;
 
 
  .game-zone{
-    /* border: 1px solid rgb(255, 0, 0);-*/
+    /* border: 1px solid rgb(255, 0, 0);*/
     height: 49vw;
 }
 
@@ -928,9 +928,10 @@ display: none;
 
 .c-player-score-tlt{
 /* border: 1px solid rgb(255, 0, 0); */
-width: 25%;
+width: 30%;
 }
 .c-player-score-tlt h2{
+    /* border: 1px solid rgb(255, 0, 0); */
 font-size: 2.2vw;
 }
 .c-player-score-cnt{
@@ -981,7 +982,7 @@ font-size: 2.2vw;
 
 .player-score-tlt{
 /* border: 1px solid rgb(255, 0, 0); */
-width: 25%;
+width:30%;
 }
 .player-score-tlt h2{
     font-size: 2.2vw;
