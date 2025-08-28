@@ -932,7 +932,7 @@ width: 25%;
 }
 .c-player-score-tlt h2{
     /* border: 1px solid rgb(255, 0, 0); */
-font-size: 2.2vw;
+font-size: 2vw;
 }
 .c-player-score-cnt{
     /* border: 1px solid rgb(255, 0, 0); */
@@ -985,7 +985,7 @@ font-size: 2.2vw;
 width:25%;
 }
 .player-score-tlt h2{
-    font-size: 2.2vw;
+    font-size: 2vw;
 }
 .player-score-cnt{
     /* border: 1px solid rgb(255, 0, 0); */
