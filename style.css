@@ -462,7 +462,7 @@ input:checked + .spcrcheckbtn{
 }
 .c-player-score-tlt{
 /* border: 1px solid rgb(255, 0, 0); */
-width: 20%;
+width: 15%;
 }
 .c-player-score-tlt h2{
 /* border: 1px solid rgb(255, 0, 0); */
@@ -610,7 +610,7 @@ color: white;
 
 .player-score-tlt{
 /* border: 1px solid rgb(255, 0, 0); */
-width: 20%;
+width: 15%;
 }
 .player-score-tlt h2{
 color: white;
@@ -730,13 +730,13 @@ height: 2.4vw;
 
 
 /* @media (max-width:600px) { */
-@media screen and (max-width: 660px) and (orientation: landscape){
+@media screen and (max-width: 900px) and (orientation: landscape){
 
 /* ------------play now-------------------- */
 
  #playbox{
-/* border: 1px solid rgb(255, 0, 0); */
-height: 45vw;
+border: 1px solid rgb(255, 0, 0);
+height: 40vw;
 width: 45%;
 }
 
@@ -916,19 +916,19 @@ display: none;
 
 
  .game-zone{
-    /* border: 1px solid rgb(255, 0, 0);*/
-    height: 49vw;
+    /* border: 1px solid rgb(255, 0, 0); */
+    height: 39vw;
 }
 
 
 .c-player-zone{
     /* border: 1px solid rgb(255, 0, 0); */
-    height: 45vw;
+    height: 37vw;
 }
 
 .c-player-score-tlt{
 /* border: 1px solid rgb(255, 0, 0); */
-width: 30%;
+width: 25%;
 }
 .c-player-score-tlt h2{
     /* border: 1px solid rgb(255, 0, 0); */
@@ -947,11 +947,11 @@ font-size: 2.2vw;
 
  .c-player{
     /* border: 1px solid rgb(255, 0, 0); */
-    height: 38vw;
+    height: 32vw;
 }
 .c-player-img-box{
     /* border: 1px solid rgb(255, 0, 0); */
-    height: 35vw;
+    height: 32vw;
     width: 54%;
 }
  
@@ -962,13 +962,13 @@ font-size: 2.2vw;
 
 .c-player-choices{
     /* border: 1px solid rgb(255, 0, 0); */
-    height: 37vw;
-    width: 30%;
+    height: 32vw;
+    width: 28%;
     margin-right: 2vw;
 }
 .c-choice{
     /* border: 1px solid rgb(255, 0, 0); */
-    height: 11vw;
+    height: 10vw;
 }
 
 
@@ -976,13 +976,13 @@ font-size: 2.2vw;
 
 .player-zone{
     /* border: 1px solid rgb(255, 0, 0); */
-    height: 45vw;
+    height: 37vw;
 }
 
 
 .player-score-tlt{
 /* border: 1px solid rgb(255, 0, 0); */
-width:30%;
+width:25%;
 }
 .player-score-tlt h2{
     font-size: 2.2vw;
@@ -1000,11 +1000,11 @@ width:30%;
 
 .player{
     /* border: 1px solid rgb(255, 0, 0); */
-    height: 38vw;
+    height: 32vw;
 }
 .player-img-box{
     /* border: 1px solid rgb(255, 0, 0); */
-    height: 35vw;
+    height: 32vw;
     width: 54%;
 }
 
@@ -1016,13 +1016,13 @@ width:30%;
 
 .player-choices{
     /* border: 1px solid rgb(255, 0, 0); */
-    height: 37vw;
-    width: 30%;
+    height: 32vw;
+    width: 28%;
     margin-left: 2vw;
 }
 .choice{
     /* border: 1px solid rgb(255, 0, 0); */
-    height: 11vw;
+    height: 10vw;
 }
 
 
@@ -1031,7 +1031,7 @@ width:30%;
 
  .vs{
     /* border: 1px solid rgb(255, 0, 0); */
-    height: 43vw;
+    height: 35vw;
 }
  .round{
     /* border: 1px solid rgb(255, 0, 0); */
