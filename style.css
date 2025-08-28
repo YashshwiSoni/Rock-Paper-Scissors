@@ -730,12 +730,12 @@ height: 2.4vw;
 
 
 /* @media (max-width:600px) { */
-@media screen and (max-width: 900px) and (orientation: landscape){
+@media screen and (max-width: 950px) and (orientation: landscape){
 
 /* ------------play now-------------------- */
 
  #playbox{
-border: 1px solid rgb(255, 0, 0);
+/* border: 1px solid rgb(255, 0, 0); */
 height: 40vw;
 width: 45%;
 }
